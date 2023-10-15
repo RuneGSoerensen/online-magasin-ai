@@ -4,11 +4,12 @@
   --darkblue: #021b60;
   --yellow: #e2c044;
   --default: 'Source Code Pro', monospace;
+  --gradiant-blue: radial-gradient(circle, #2662b7, #1e4fa1, #163d8b, #0d2c75, #021b60);
 
 }
-/* body {
-  background-color: black;
-} */
+body {
+  background-image: var(--gradiant-blue);
+}
 
 /* Default css reset */
 * {
@@ -209,12 +210,21 @@ main {
   margin-top: 30px;
   margin-bottom: 100px;
 }
-main p,h2 {
+main h2 {
+  font-family: var(--default);
+  color: var(--yellow);
+  margin-bottom: 20px;
+}
+
+.items h3 {
   font-family: var(--default);
   color: var(--whiteblue);
   padding: 10px;
 }
-main p {
+.items p {
+  font-family: var(--default);
+  color: var(--whiteblue);
+  padding: 10px;
   line-height: 1.5;
 }
 main .grid-container {
@@ -229,7 +239,7 @@ main .grid-container {
   border: 1px solid #424242;
   border-radius:5px;
   /* background-color: var(--darkblue); */
-  background-color: #424242;
+  background-color: var(--darkblue);
   transition: 0.2s;
 }
 .items img {
@@ -240,7 +250,7 @@ main .grid-container {
 .items:hover {
   transform: scale(1.03);
   transition: 0.2s;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 14px 13px 26px -12px rgba(0,0,0,0.62);
 }
 .item1 {
   grid-row: 1;
