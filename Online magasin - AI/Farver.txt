@@ -1,6 +1,0 @@
-/* CSS HEX */
---alice-blue: #dae7f1ff;
---polynesian-blue: #1a509dff;
---celestial-blue: #47a2e0ff;
---egyptian-blue: #1e3091ff;
---savoy-blue: #5265c2ff;

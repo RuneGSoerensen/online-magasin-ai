@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,6 +27,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
+    <!-- Navigations html, som gengår igennem hjemmesiden. -->
+
     <nav>
       <div class="icon-container">
         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -44,17 +46,22 @@
       <div class="nav-links">
         <ul>
           <li><a href="index.html">Hjem</a></li>
-          <li><a href="#">Nyheder</a></li>
+          <li><a href="nyheder.html">Nyheder</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">Om os</a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- Slider html -->
+
     <figure class="slider-container">
       <div class="box">
+        <!-- Her bruges "i: 1 til 8" det er nødvendigt for javascript slideren -->
+
         <span style="--i: 1"
-          ><a href="#"
-            ><img src="media/ai-tools.webp" alt="idontfuckingknow" /></a
+          ><a href="ai-tools.html"
+            ><img src="media/ai-tools.webp" alt="blå robot hånd ai" /></a
         ></span>
         <span style="--i: 2"
           ><a href="#"
@@ -63,14 +70,16 @@
               alt="Chatgbt prompts guide" /></a
         ></span>
         <span style="--i: 3"
-          ><a href="#"
+          ><a href="chatgbt.html"
             ><img
               src="media/chatgbt-students.webp"
               alt="Billede af openai" /></a
         ></span>
         <span style="--i: 4"
           ><a href="#"
-            ><img src="media/chatgbt.webp" alt="idontfuckingknow" /></a
+            ><img
+              src="media/chatgbt.webp"
+              alt="Billede af telefon med chatgbt logo" /></a
         ></span>
         <span style="--i: 5"
           ><a href="#"
@@ -80,23 +89,32 @@
         ></span>
         <span style="--i: 6"
           ><a href="#"
-            ><img src="media/coding.webp" alt="Billede af openai" /></a
+            ><img
+              src="media/coding.webp"
+              alt="Billede af et kode snippet." /></a
         ></span>
         <span style="--i: 7"
-          ><a href="#"><img src="media/openai.webp" alt="idontfuckingknow" /></a
+          ><a href="openai-etik.html"
+            ><img src="media/openai.webp" alt="openai's logo" /></a
         ></span>
         <span style="--i: 8"
-          ><a href="#"
+          ><a href="openai-etik.html"
             ><img
-              src="media/students-behind-laptop.webp"
-              alt="Chatgbt prompts guide" /></a
+              src="media/generated-image.webp"
+              alt="Uetisk robot som er ai generated" /></a
         ></span>
       </div>
+
+      <!-- btns, som giver slidren funktionen til at dreje rundt. -->
+
       <div class="btns">
         <div class="btn prev"></div>
         <div class="btn next"></div>
       </div>
     </figure>
+
+    <!-- Her er html'en for seneste nyheder. Her bruger jeg hovedesagligt 2 classes
+    som bliver genbrugt igennem artiklerne, itemsX(1-4) og items. -->
     <main class="index-news">
       <h2 id="index-news-h2">Seneste nyheder</h2>
       <div class="grid-container">
@@ -128,7 +146,9 @@
           </p>
         </div>
         <div class="item3 items">
-          <a href="ai-tools.html"><img src="media/ai-tools.webp" alt="" /></a>
+          <a href="ai-tools.html"
+            ><img src="media/ai-tools.webp" alt="Robot hånd"
+          /></a>
           <h3>Ai Tools</h3>
           <p>
             Her finder du en artikel omkring de seneste nye ai tools. Vi har
@@ -141,7 +161,9 @@
         </div>
         <div class="item4 items">
           <a href="chatgbt.html"
-            ><img src="media/chatgbt-students.webp" alt=""
+            ><img
+              src="media/chatgbt-students.webp"
+              alt="Chatgbt brugt af studenter"
           /></a>
           <div class="item4-content">
             <h3>Chatgbt: Den 24/7 studie assistent</h3>
@@ -155,6 +177,9 @@
         </div>
       </div>
     </main>
+
+    <!-- En meget simpel footer, som jeg sagtens kunne have gjort bedre. Men jeg ville
+    hellere putte min tid nogle steder hvor jeg kunne lære mere. -->
     <footer>
       <div class="footer-container">
         <div class="footer-details">
