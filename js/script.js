@@ -1,9 +1,8 @@
 //Definere variabler for classes: .prev .next .box
 // Slider variabler
-let prev = document.querySelector(".prev");
-let next = document.querySelector(".next");
-let box = document.querySelector(".box");
-
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const box = document.querySelector(".box");
 
 // Slider javascript
 // Definere "degrees som nul"
